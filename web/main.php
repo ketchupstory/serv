@@ -1,3 +1,6 @@
 <?php
-echo "Api server Medods RUN";
-  ?>
+
+require __DIR__."/../vendor/autoload.php";
+$app = new serv\app\App();
+
+?>

@@ -1,18 +1,3 @@
-﻿AddDefaultCharset utf-8
- 
-RewriteEngine on
- 
-php_value upload_max_filesize 50M
-php_value post_max_size 50M
-php_value display_errors 1
- 
- 
-DirectoryIndex serv/web/main.php?controller=index
- 
-ErrorDocument 404 serv/web/main.php?controller=error
- 
-RewriteRule ^index.html$ serv/web/main.php
- 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ main.php?route=$1 [L,QSA]
+﻿RewriteEngine on
+RewriteBase /serv/ 
+RewriteRUle ^(.*)$ main.php

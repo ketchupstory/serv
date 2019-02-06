@@ -28,8 +28,13 @@ class __TwigTemplate_f01277d029f4a6dbed650c686b668eeb31abe79942001d9f299fac1ac2b
     <title></title>
   </head>
   <body>
+    <ul>
+      <li><a href=\"/\">главная</a></li>
+      <li><a href=\"/doctor\">Доктора</a></li>
+      <li><a href=\"/doctor/list\">Список докторов</a></li>
+    </ul>
     <p>";
-        // line 9
+        // line 14
         echo twig_escape_filter($this->env, ($context["the"] ?? null), "html", null, true);
         echo "</p>
 
@@ -50,7 +55,7 @@ class __TwigTemplate_f01277d029f4a6dbed650c686b668eeb31abe79942001d9f299fac1ac2b
 
     public function getDebugInfo()
     {
-        return array (  33 => 9,  23 => 1,);
+        return array (  38 => 14,  23 => 1,);
     }
 
     public function getSourceContext()

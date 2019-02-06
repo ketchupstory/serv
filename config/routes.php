@@ -1,4 +1,5 @@
 <?php
 return   array(
-  'doctor' => 'doctor/list' );
+  'doctor' => 'doctor/index',
+  'doctor/list' => 'doctor/list', );
  ?>

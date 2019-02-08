@@ -10,7 +10,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "twig/twig": "^2.6"
+        "twig/twig": "^2.6",
+        "symfony/asset": "^4.2"
     },
     "autoload": {
       "psr-4": {

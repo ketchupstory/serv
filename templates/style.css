@@ -1,9 +1,3 @@
-<html>
-<head>
-	<title>Панель администратора</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-<style>
 /*@font-face {
     font-family: "Roboto";
     src: url(fonts/Roboto-Regular.ttf);
@@ -295,41 +289,3 @@ tr {
     line-height: 28px;
     background-color: #e6e6e875;
 }
-</style>
-</head>
-<body>
-	<header>
-
-		<div class='container'>
-			<div class='menu-left'>
-				<!-- <img alt="Логотип" src="img/logo.png"> -->
-				<p>TeleClinica server</p>
-			</div>
-			<div class='menu-right'>
-				<button>Выход</button>
-			</div>
-		</div>
-	</header>
-	<ul class="menu">
-		<li><a href="/" class="active"><img src="icon/desktop.png">Рабочий стол</a></li>
-		<li><a href="/setting"><img src="icon/setting.png">Настройки</a>
-		<ul>
-			<li><a href="#">Подключение</a></li>
-			<li><a href="/setting/doctor">Список врачей</a></li>
-			<li><a href="#">Справочники</a></li>
-			<li><a href="#">Настройки выгрузки</a></li>
-		</ul>
-		</li>
-		<li><a href="#"><img src="icon/list.png">Программа</a></li>
-	</ul>
-
-	<div class='list container'>
-		<section id='listCart'>
-			<h1>Рабочй стол</h1>
-
-
-
-		</section>
-	</div>
-</body>
-</html>

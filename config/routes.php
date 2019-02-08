@@ -1,5 +1,5 @@
 <?php
 return   array(
-  'doctor' => 'doctor/index',
-  'doctor/list' => 'doctor/list', );
+  'setting' => 'setting/index',
+  'setting/doctor' => 'setting/doctorList', );
  ?>

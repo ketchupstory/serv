@@ -3,15 +3,15 @@
 use serv\controllers\baseController;
 
 
-class DoctorController extends baseController
+class SettingController extends baseController
 {
 
   public function __construct(){
      parent::__construct();
   }
-  public function actionList(){
+  public function actionDoctor(){
 
-    $template = $this->twig->load('index.html');
+    $template = $this->twig->load('settingDoctor.html');
     echo $template->render(['the' => 'doctorList']);
 
 
@@ -20,7 +20,7 @@ class DoctorController extends baseController
   }
   public function actionIndex(){
 
-     $template = $this->twig->load('index.html');
+     $template = $this->twig->load('setting.html');
      echo $template->render(['the' => 'doctors page']);
   }
 }

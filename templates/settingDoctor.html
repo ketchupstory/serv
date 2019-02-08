@@ -325,10 +325,67 @@ tr {
 
 	<div class='list container'>
 		<section id='listCart'>
-			<h1>Рабочй стол</h1>
+			<h1>Список врачей</h1>
+			<div class='sort'>
+				<div>
+					<label>Специальность</label>
+					<select>
+						<option>Все</option>
+						<option>gfhfg</option>
+					</select>
+					<label>Статус</label>
+					<select>
+						<option>Все</option>
+						<option>gfhfg</option>
+					</select>
+				</div>
 
+				<div class="find">
+					<form>
+						<input type="text" placeholder="Введите фамилию...">
+						<button type="submit"></button>
+					</form>
+				</div>
+			</div>
 
-
+			<table>
+				<tr>
+					<th><p>ФИО</p></th>
+					<th><p>Специальность</p></th>
+					<th><p>Статус интеграции</p></th>
+					<th>Действия</th>
+				</tr>
+				<tr>
+					<td><p>Иванов Иван Иванович</p></td>
+		    		<td><p>педиатр</p></td>
+					<td><p style="text-transform: uppercase;">включен</p></td>
+					<td>
+						<form action="productDeleteAdmin" method="post">
+							<button name='idProduct' value="#">Добавить в систему</button>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><p>Иванов Иван Иванович</p></td>
+		    		<td><p>педиатр</p></td>
+					<td><p style="text-transform: uppercase;">включен</p></td>
+					<td>
+						<form action="productDeleteAdmin" method="post">
+							<button name='idProduct' value="#">Добавить в систему</button>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td><p>Иванов Иван Иванович</p></td>
+		    		<td><p>педиатр</p></td>
+					<td><p style="text-transform: uppercase;">включен</p></td>
+					<td>
+						<form action="productDeleteAdmin" method="post">
+							<button name='idProduct' value="#">Добавить в систему</button>
+						</form>
+					</td>
+				</tr>
+			</table>
 		</section>
 	</div>
 </body>

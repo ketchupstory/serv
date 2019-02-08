@@ -8,7 +8,6 @@ class baseController
   protected $twig;
   public function __construct(){
      $this->loaderTwig = new \Twig_Loader_Filesystem(__DIR__.'/../templates');
-     $this->twig = new \Twig_Environment($this->loaderTwig, [
-    'cache' => __DIR__.'/../cache',] );
+   $this->twig = new \Twig_Environment($this->loaderTwig);
   }
 }

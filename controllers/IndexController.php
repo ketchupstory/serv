@@ -1,7 +1,7 @@
 <?php
 namespace serv\controllers;
 use serv\controllers\baseController;
-
+use serv\core\Weather;
 class IndexController extends baseController
 {
   public function __construct(){
@@ -9,11 +9,12 @@ class IndexController extends baseController
   }
   public function actionIndex() {
 
-    $string = "20-11-2012";
-    $pattern = "/([0-9]{2})-([0-9]{2})-([0-9]{4})/";
-    $replacement = "Year $3 mounth $2 day $1 ";
-    $template = $this->twig->load('index.html');
-    $today= preg_replace($pattern,$replacement, $string);
-    echo $template->render(['today' =>$today]);
+
+    $weather = new Weather();
+    $weather->getCurrentWeather();
+  $template = $this->twig->load('index.html');
+
+$weatherString= $weather->prettyString();
+    echo $template->render(['weather'=>$weatherString]);
   }
 }

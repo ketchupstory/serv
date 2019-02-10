@@ -1,6 +1,8 @@
 <?php
 namespace serv\core;
 use serv\controllers\IndexController;
+use serv\controllers\SettingController;
+
 class Router
 {
   private $routes;
@@ -18,32 +20,32 @@ class Router
       return trim($_SERVER['REQUEST_URI'], '/');
     }
   }
-
+  
+ /*
+По запрашиваему адресу создает экземпляр контролера и выполнятет метод
+ */
   public function run() {
     $uri = $this->getURI();
 if($uri=="") {
-    $controlerFile = __DIR__."/../controllers/IndexController.php";
-    include_once($controlerFile);
+
     $controlerObject = new IndexController;
     $result = $controlerObject->actionIndex();
 
 }
+
     foreach($this->routes as $uriPattern => $path) {
       if(preg_match("~$uriPattern~", $uri)) {
+
       $segments = explode('/', $_SERVER['REQUEST_URI']);
 
-      $controlerName = ucfirst($segments[1])."Controller";
+      $controlerName = "serv\controllers\\".ucfirst($segments[1])."Controller";
 
+  //Если аргументов url меньше двух вызывается метод индекс контролера
       if(count($segments)>2)
         $actionName="action".ucfirst($segments[2]);
       else
         $actionName="actionIndex";
 
-    $controlerFile = __DIR__."/../controllers/".$controlerName.".php";
-
-   if(file_exists($controlerFile)) {
-     include_once($controlerFile);
-   }
 
    $controlerObject = new $controlerName;
    $result = $controlerObject->$actionName();

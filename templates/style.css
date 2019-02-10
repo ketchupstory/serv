@@ -118,7 +118,11 @@ header button:hover {
 	display: flex;
 	flex-direction: column;
 }
-
+.menu .icon-menu {
+	display: block;
+font-size:30px;
+padding:10px;
+}
 .menu li a {
 	font-size: 12px;
     display:block;
@@ -137,7 +141,9 @@ header button:hover {
 .menu li a.active {
 	color: #fff;
 }
-
+.menu li a:active {
+		color: #fff;
+}
 .menu li a img {
 	padding: 6px;
 }

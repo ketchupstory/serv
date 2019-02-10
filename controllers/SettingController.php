@@ -1,5 +1,5 @@
 <?php
-
+namespace serv\controllers;
 use serv\controllers\baseController;
 
 

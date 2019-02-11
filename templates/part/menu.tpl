@@ -1,6 +1,6 @@
 <ul class="menu">
-  <li><a href="/" ><i class="icon-menu fa fa-desktop"></i>Рабочий стол</a></li>
-  <li><a href="/setting"><i class="icon-menu fa fa-cog"></i>Настройки</a>
+  <li><a href="/" ><img src="/serv/public/icon/desktop.png">Рабочий стол</a></li>
+  <li><a href="/setting"><img src="/serv/public/icon/setting.png">Настройки</a>
   <ul>
     <li><a href="#">Подключение</a></li>
     <li><a href="/setting/doctor">Список врачей</a></li>
@@ -8,5 +8,5 @@
     <li><a href="#">Настройки выгрузки</a></li>
   </ul>
   </li>
-  <li><a href="#"><i class=" icon-menu fa fa-clipboard"></i>О сервисе</a></li>
+  <li><a href="#"><img src="/serv/public/icon/list.png">Программа</a></li>
 </ul>

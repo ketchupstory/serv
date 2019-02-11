@@ -1,3 +1,4 @@
 ﻿RewriteEngine on
-RewriteBase /serv/ 
+RewriteBase /serv/
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRUle ^(.*)$ main.php

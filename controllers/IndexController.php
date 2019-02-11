@@ -9,12 +9,11 @@ class IndexController extends baseController
   }
   public function actionIndex() {
 
-
-    $weather = new Weather();
+    $weather = new Weather("Ростов");
     $weather->getCurrentWeather();
-  $template = $this->twig->load('index.html');
+    $weatherString= $weather->prettyString();
 
-$weatherString= $weather->prettyString();
+    $template = $this->twig->load('index.html');
     echo $template->render(['weather'=>$weatherString]);
   }
 }
